@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Instagram Clone</title>
+    
+    <style>
+        @import url(default.css);
+        @import url(sidebar.css);
+        @import url(wrapper.css);
+        @import url(account.css);
+        @import url(feed.css);
+    </style>
+
+
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <li>
+                <img width="102" src="image/logo_instagram.png" alt="">
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/1.png" alt="">
+                <p class="bold"><b>Home</b></p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/2.png" alt="">
+                <p class="bold">Search</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/3.png" alt="">
+                <p class="bold">Exprole</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/4.png" alt="">
+                <p class="bold">Reels</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/5.png" alt="">
+                <p class="bold">Pesan</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/6.png" alt="">
+                <p class="bold">notifikasi</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/7.png" alt="">
+                <p class="bold">Buat</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img width="24px" class="sidebar-profil" src="image/post/nyet.jpg" alt="">
+                <p class="bold">Profil</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/9.png" alt="">
+                <p class="bold">More</p>
+            </li>
+        </div>
+        <div class="wrapper">
+            <div class="center flex-col">
+                <div class="status-wrapper flex-row">
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="./image/follower/1.png" alt="">
+                        </div>
+                        <p class="username">Lorem</p>
+                    </div>
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="./image/follower/2.png" alt="">
+                        </div>
+                        <p class="username">asodja</p>
+                    </div>
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="./image/follower/3.png" alt="">
+                        </div>
+                        <p class="username">asdfsdf</p>
+                    </div>
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="./image/follower/4.png" alt="">
+                        </div>
+                        <p class="username">erqwgdf</p>
+                    </div>
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="./image/follower/5.png" alt="">
+                        </div>
+                        <p class="username">werosuhdfu</p>
+                    </div>
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="./image/follower/7.png" alt="">
+                        </div>
+                        <p class="username">qwesdfjiha</p>
+                    </div>
+
+                </div>
+                <div class="feed flex-col">
+                    <div class="profile flex-row">
+                        <div class="img-wrap">
+                            <img class="feed-profile" src="./image/post/nyet.jpg" >
+                        </div>
+                        <p class="flex-col">
+                            <span>Haris Dwi Rahmansyah</span>
+                            <span>Audio Aseli</span>
+                        </p>
+                        <img width="20" src="">
+                    </div>
+                    <div class="imgs swiper">
+                        <!-- Slider main container -->
+
+                            <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="./image/gmbr1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/gmbr2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/gmbr3.jpg" alt=""></div>
+                            
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="feed-icons flex-row">
+                        <img id="heart" onclick="like()" src="./image/icons/11.png" alt="">
+                        <img src="./image/icons/12.png" alt="">
+                        <img src="./image/icons/13.png" alt="">
+                        <img src="./image/icons/14.png" alt="">
+                    </div>
+                    <div class="likes">
+                        213,342 likes
+                    </div>
+                    <div class="caption">
+                        <span class="title">haris aja</span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat non laboriosam nemo facere eaque ipsam obcaecati eius, error ipsa nobis!
+                        <span class="hashtag">#roketkambing</span>
+                    </div>
+                    <div class="count">
+                        Lihat semua 3.367 komentar
+                    </div>
+                    <div class="comment flex-row">
+                        <div class="comment-box">
+                            <input type="text" placeholder="Tambahkan komentar…">
+                        </div>
+                        <div class="imgs emoji-icons">
+                            <img src="./image/icons/17.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="account ">
+                <div class="account-content">
+                    <li class="friend flex-row">
+                        <div class="img-wrap">
+                            <img class="suggest-profile" src="./image/profile/1.png" alt="">
+                        </div>
+                        <p class="flex-col">
+                            <span>Lorem, ipsum.. </span>
+                            <span>apa aja lah</span>
+                        </p>
+                        <a href="#">Switch</a>
+                    </li>
+                    <li class="flex-row suggested">
+                        <span>Suggested For You</span>
+                        <a href="#">See All</a>
+                    </li>
+                    <li class="friend flex-row">
+                        <div class="img-wrap">
+                            <img class="suggest-profile" src="./image/follower/1.png" alt="">
+                        </div>
+                        <p class="flex-col">
+                            <span>apa aja lah </span>
+                            <span>seggested for you</span>
+                        </p>
+                        <a href="#">Follow</a>
+                    </li>
+                    <li class="friend flex-row">
+                        <div class="img-wrap">
+                            <img class="suggest-profile" src="./image/follower/2.png" alt="">
+                        </div>
+                        <p class="flex-col">
+                            <span>apa aja lah </span>
+                            <span>seggested for you</span>
+                        </p>
+                        <a href="#">Follow</a>
+                    </li>
+                    <li class="friend flex-row">
+                        <div class="img-wrap">
+                            <img class="suggest-profile" src="./image/follower/3.png" alt="">
+                        </div>
+                        <p class="flex-col">
+                            <span>apa aja lah </span>
+                            <span>seggested for you</span>
+                        </p>
+                        <a href="#">Follow</a>
+                    </li>
+                    <li class="friend flex-row">
+                        <div class="img-wrap">
+                            <img class="suggest-profile" src="./image/follower/4.png" alt="">
+                        </div>
+                        <p class="flex-col">
+                            <span>apa aja lah </span>
+                            <span>seggested for you</span>
+                        </p>
+                        <a href="#">Follow</a>
+                    </li>
+                </div>
+                <div class="about">
+                    <a href="#">about</a>
+                    <a href="#">help</a>
+                    <a href="#">press</a>
+                    <a href="#">API</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Locations</a>
+                    <a href="#">Leanguange</a>
+                    <a href="#">Meta verified</a>
+                </div>
+                <div class="name">
+                    2024 INSTAGRAM FROM META
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+            },
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+        
+
+        let is_liked = true;
+        function like () {
+            if (is_liked == true) {
+                $('#heart').attr('src','./image/icons/15.png')
+                is_liked = false;
+            }
+            else {
+                $('#heart').attr('src','./image/icons/11.png')
+                is_liked = true;
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
